@@ -1,0 +1,11 @@
+COMMANDS
+
+node -v                 -   check if node is installed
+npm -v                  -   check if npm is installed
+npm init                -   initialize the application to create package.json
+npm i [module_name]     -   install module
+npm i -g [module_name]  -   install a module globally
+nodemon [js_file_name]  -   run nodemon
+touch [file_name]       -   create a file
+mkdir [folder_name]     -   create a folder/directory
+node [js_file_name]     -   run a file in node
