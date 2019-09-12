@@ -1,8 +1,9 @@
-const validator = require('validator');
+// const validator = require('validator');
 const chalk = require('chalk');
 const yargs = require('yargs');
-const fs = require('fs');
-const getNotes = require('./notes');
+const notes = require('./notes');
+// const fs = require('fs');
+
 
 
 // Custom Yargs version
@@ -25,8 +26,7 @@ yargs.command({
     }
   },
   handler: argv => {
-    console.log(`Title: ${argv.title}`);
-    console.log(`Body: ${argv.body}`);
+    notes.addNote(argv.title, argv.body);
   }
 });
 
@@ -52,16 +52,6 @@ yargs.command({
 });
 
 console.log(yargs.argv);
-
-
-
-
-
-
-
-
-
-
 
 // const msg = getNotes();
 // const greenMsg = chalk.green.inverse.bold('Success');
